@@ -1,0 +1,23 @@
+    spring:
+      security:
+        oauth2:
+          resourceserver:
+            jwt:
+              issuer-uri: ${auth0audience-issuer-uri}
+              audiences: ${auth0audience-audience}
+          client:
+            registration:
+              auth0:
+                client-id: ${auth0audience-client-id}
+                client-secret: ${auth0audience-client-secret}
+                provider: auth0
+            provider:
+              auth0:
+                issuer-uri: ${auth0audience-issuer-uri}
+
+#logging:
+#  level:
+#    org:
+#      springframework:
+#        security: DEBUG
+
