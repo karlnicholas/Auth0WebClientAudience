@@ -10,6 +10,7 @@
               auth0:
                 client-id: ${auth0audience-client-id}
                 client-secret: ${auth0audience-client-secret}
+                authorization-grant-type: client_credentials
                 provider: auth0
             provider:
               auth0:
